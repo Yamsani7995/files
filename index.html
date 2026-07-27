@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay — CSE Student · Cybersecurity & Builder</title>
+  <meta name="description" content="Portfolio of Vijay — third-year CSE student focused on cybersecurity, AI/ML and mobile app development." />
+
+  <!-- No external fonts or image requests: everything renders from system fonts
+       and CSS so the page loads fast on slow mobile connections. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav-mark">VK<span class="nav-mark-dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Portfolio — CSE · Cybersecurity</p>
+
+        <!-- Signature element: a camera/scan "viewfinder" frame.
+             It ties together the two threads of the work shown below —
+             photography apps (a literal viewfinder) and security work
+             (scanning for what's exposed). Reused, quietly, on the
+             initials mark, project cards and skill groups. -->
+        <div class="viewfinder viewfinder--lg" aria-hidden="true">
+          <span class="vf-corner vf-tl"></span>
+          <span class="vf-corner vf-tr"></span>
+          <span class="vf-corner vf-bl"></span>
+          <span class="vf-corner vf-br"></span>
+          <span class="vf-initials">VK</span>
+        </div>
+
+        <h1 class="hero-title">Vijay</h1>
+        <p class="hero-subtitle">
+          Third-year CSE student building at the edge of
+          <strong>security</strong>, <strong>AI/ML</strong> and
+          <strong>mobile apps</strong> — based in Telangana, India.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <p class="hero-status" role="status">
+        <span class="status-dot"></span> Open to internships & collaboration
+      </p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">Finding signal in the noise.</h2>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <!-- EDIT ME: swap this paragraph for your own voice/story. -->
+            <p>
+              I'm a third-year BTech CSE student with a focus on cybersecurity,
+              currently working through a self-directed study plan that spans
+              security, applied AI/ML and game development. I like projects
+              that force me to go deep rather than wide — reading protocols
+              closely, breaking things on purpose, then rebuilding them properly.
+            </p>
+            <p>
+              Outside coursework I build mobile apps end-to-end — mobile client,
+              backend, and the AI services in between — and I'm working on a
+              long-term multimodal AI project for the Telugu language.
+              Longer term, I want to build a company somewhere in the overlap
+              of cybersecurity, AI and product.
+            </p>
+          </div>
+
+          <dl class="about-facts">
+            <div class="fact">
+              <dt>Focus</dt>
+              <dd>Cybersecurity</dd>
+            </div>
+            <div class="fact">
+              <dt>Studying</dt>
+              <dd>BTech, Computer Science</dd>
+            </div>
+            <div class="fact">
+              <dt>Based in</dt>
+              <dd>Telangana, India</dd>
+            </div>
+            <div class="fact">
+              <dt>Also exploring</dt>
+              <dd>AI/ML, game dev</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="section-inner">
+        <p class="section-tag">Projects</p>
+        <h2 class="section-title">Things I've built and am building.</h2>
+
+        <!-- Project data lives here as plain markup so it's trivial to
+             add/remove/edit a card without touching CSS or JS. -->
+        <div class="grid grid--projects">
+
+          <article class="card card--project">
+            <span class="vf-corner vf-tl"></span><span class="vf-corner vf-tr"></span>
+            <span class="vf-corner vf-bl"></span><span class="vf-corner vf-br"></span>
+            <p class="card-status">In progress</p>
+            <h3 class="card-title">Color Hunt</h3>
+            <p class="card-desc">
+              A camera-only mobile game: players get a push notification with
+              a color and a time window to photograph it in the real world.
+              Approved shots go to a public gallery for community voting,
+              with winners chosen automatically at close.
+            </p>
+            <ul class="tag-list">
+              <li>React Native</li><li>NestJS</li><li>FastAPI + OpenCV</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="card card--project">
+            <span class="vf-corner vf-tl"></span><span class="vf-corner vf-tr"></span>
+            <span class="vf-corner vf-bl"></span><span class="vf-corner vf-br"></span>
+            <p class="card-status">Concept → build</p>
+            <h3 class="card-title">SnapEquity</h3>
+            <p class="card-desc">
+              A Flutter-based mobile photography competition platform for the
+              Indian market, with AI quality gating and community voting.
+              Daily to yearly contests — including color-hunting and
+              theme-based photography — designed to run anywhere, with small,
+              locally sponsored prize pools.
+            </p>
+            <ul class="tag-list">
+              <li>Flutter</li><li>AI quality gating</li><li>Community voting</li>
+            </ul>
+          </article>
+
+          <article class="card card--project">
+            <span class="vf-corner vf-tl"></span><span class="vf-corner vf-tr"></span>
+            <span class="vf-corner vf-bl"></span><span class="vf-corner vf-br"></span>
+            <p class="card-status">Long-term</p>
+            <h3 class="card-title">Telugu Multimodal AI</h3>
+            <p class="card-desc">
+              A multimodal AI system for the Telugu language, spanning text,
+              audio and image, scoped as a 12-month phased roadmap — built
+              with an eye toward open-source contribution and startup
+              potential.
+            </p>
+            <ul class="tag-list">
+              <li>IndicBERT</li><li>Whisper</li><li>Hugging Face</li>
+            </ul>
+          </article>
+
+          <article class="card card--project">
+            <span class="vf-corner vf-tl"></span><span class="vf-corner vf-tr"></span>
+            <span class="vf-corner vf-bl"></span><span class="vf-corner vf-br"></span>
+            <p class="card-status">Research</p>
+            <h3 class="card-title">Prompt Injection Research</h3>
+            <p class="card-desc">
+              An undergraduate research paper examining prompt injection —
+              how it works against LLM-integrated systems, and what that
+              means for securing them.
+            </p>
+            <ul class="tag-list">
+              <li>LLM security</li><li>AI safety</li><li>Research writing</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="section-tag">Skills</p>
+        <h2 class="section-title">What I work with.</h2>
+
+        <div class="grid grid--skills">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Security</h3>
+            <ul class="tag-list tag-list--pill">
+              <li>Application security</li>
+              <li>LLM / prompt injection</li>
+              <li>Threat modeling</li>
+              <li>Secure auth design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">AI / ML</h3>
+            <ul class="tag-list tag-list--pill">
+              <li>Python</li>
+              <li>Hugging Face</li>
+              <li>Whisper</li>
+              <li>IndicBERT</li>
+              <li>OpenCV</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Mobile & Frontend</h3>
+            <ul class="tag-list tag-list--pill">
+              <li>Flutter</li>
+              <li>React Native</li>
+              <li>TypeScript</li>
+              <li>HTML / CSS / JS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Backend & Infra</h3>
+            <ul class="tag-list tag-list--pill">
+              <li>Node.js / NestJS</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL · Prisma</li>
+              <li>GitHub Actions</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="section-inner section-inner--narrow">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let's talk.</h2>
+        <p class="contact-copy">
+          Open to internships, collaboration, or just talking shop about
+          security and mobile apps. The fastest way to reach me is email.
+        </p>
+
+        <ul class="contact-links">
+          <!-- EDIT ME: replace every placeholder below with your real details -->
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-profile</a>
+          </li>
+        </ul>
+
+        <!-- This is a static site with no backend, so the form below opens
+             the visitor's email client via a mailto: link rather than
+             posting anywhere. Swap the form's behaviour in script.js for
+             a service like Formspree or EmailJS if you want in-page
+             submission instead. -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Vijay. Built with plain HTML, CSS & JS.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
